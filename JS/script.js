@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#submitButton').click(function(e) {
-        $("#imagesContainer").html("");
+        $("#imagesContainer").html(""); /*Se podrá hacer que postee la foto en el gallery page? */
 
         var words = $('#searchField').val().split(' ');
 
@@ -39,5 +39,21 @@ $(document).ready(function() {
         });
 
         e.preventDefault();
+    });
+});
+
+
+/*-- Esto es del login form. Eliminar si conflige con search bar --- */
+jQuery(document).ready(function($) {
+    tab = $('.tabs h3 a');
+
+    tab.on('click', function(event) {
+        event.preventDefault();
+        tab.removeClass('active');
+        $(this).addClass('active');
+
+        tab_content = $(this).attr('href');
+        $('div[id$="tab-content"]').removeClass('active');
+        $(tab_content).addClass('active');
     });
 });
