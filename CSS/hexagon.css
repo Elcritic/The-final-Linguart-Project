@@ -10,14 +10,18 @@
 
 }
 
+.main {
+  background-image:url("../images/sbackground.png");
+   z-index: -5;
+}
 
 body {
     color: #FFF;
-   background-image:url("");
+   
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-size:cover;
-   z-index: -1;
+  
     -webkit-font-smoothing: antialiased;
 
 }
@@ -264,3 +268,4 @@ ul.social-icons {
   align-items: center;
 
 }
+
