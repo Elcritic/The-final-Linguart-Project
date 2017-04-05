@@ -4,6 +4,8 @@ $(document).ready(function() {
 
         var words = $('#searchField').val().split(' ');
 
+
+/* This is where the magic happens!---> */
         $.each(words, function(wordKey, word) {
           $('#photo'+wordKey).data('word',word);
           $('#photo'+wordKey).find('h1').text(word);
@@ -23,9 +25,7 @@ $(document).ready(function() {
 
             request.done(function(result) {
                 $('.photo').each(function(key) {
-                    /*$("<img />", {
-                        src: key.link
-                    }).appendTo(".imagesContainer");*/
+               
 
                     if($(this).data('word') == result.queries.request[0].searchTerms)
                       $(this).find('img').attr('src', result.items[0].link);
