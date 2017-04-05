@@ -16,7 +16,7 @@ $(document).ready(function() {
                 data: {
                     async: false,
                     q: word,
-                    key: 'AIzaSyD91ppLwusXYjTstGuDAupEmDFnV5BnMH4',
+                    key: 'AIzaSyD91ppLwusXYjTstGuDAupEmDFnV5BnMH4', /* ---Backup key ---  AIzaSyBGRuryDCvKrevKY8ESZRr1CqVnV0064ts  ----*/
                     cx: '004589946511611950888:dfit4qk1ols',
                     searchType: 'image',
                     num: 1
